@@ -1,6 +1,11 @@
 .header-border {
     display: flex;
     justify-content: center;
+    z-index: +1;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
     border-bottom: 2px solid black;
 }
 
