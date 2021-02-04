@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <Fragment>
             <div className="header-border">
-                <h1>Instagram Navigator</h1>
+                <h1 className="header-name">Instagram Navigator</h1>
             </div>
         </Fragment>
     )
