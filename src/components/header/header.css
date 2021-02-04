@@ -1,0 +1,5 @@
+.header-border {
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px whitesmoke;
+}

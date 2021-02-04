@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import { Fragment } from 'react';
+
+import Header from "./components/header/header.jsx"
 
 const App = () => {
   return(
     <Fragment>
-      <div>
-        <span>Hello</span>
-      </div>
+      <Header />
     </Fragment>
   )
 }
