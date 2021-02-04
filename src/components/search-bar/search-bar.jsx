@@ -7,6 +7,7 @@ const SearchBar = () => {
         <Fragment>
             <div className="search-bar">
                 <input className="input-bar" />
+                <button className="input-button">🔎</button>
             </div>
         </Fragment>
     )
