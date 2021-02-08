@@ -25,6 +25,7 @@ const reducer = (state = INITIAL_STATE, action) => {
             }
 
         case Types.RESET_STATE:
+            localStorage.setItem("current-user", null)
             return {
                 user: null,
                 posts: null

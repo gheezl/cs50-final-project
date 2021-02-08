@@ -3,7 +3,7 @@ import { Fragment, useEffect } from 'react';
 
 import {useSelector, useDispatch} from "react-redux"
 
-import { resetState } from './redux/actions';
+import { getUserSuccess, getPostSuccess } from './redux/actions';
 
 import Background from "./components/particles/particles.jsx"
 
@@ -15,7 +15,14 @@ import Posts from "./components/posts/posts.jsx"
 
 const App = () => {
   const user = useSelector(state => state.user)
+  const dispatch = useDispatch()
+  const cachedData = localStorage.getItem("current-user")
 
+  if (cachedData != "null") {
+    dispatch(getUserSuccess(cachedData[0]))
+    dispatch(getPostSuccess(cachedData[1]))
+  }
+  
   return(
     <Fragment>
       <Background />

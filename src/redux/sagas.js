@@ -14,6 +14,8 @@ export function* getUser({payload : input}) {
         yield put(getUserSuccess(user_info.json()))
         const posts = yield fetch(`https://the-instagram.p.rapidapi.com/v1/profile/${input.toLowerCase().trim()}/media`, api_info)
         yield put(getPostSuccess(posts.json()))
+        yield localStorage.setItem("current-user", [user_info, posts]) 
+        
     }
     catch (error) {
         alert(error.message)
