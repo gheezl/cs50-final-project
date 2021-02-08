@@ -10,9 +10,9 @@ import {api_info} from "../api/api.js"
 
 export function* getUser({payload : input}) {
     try {
-        const user_info = yield fetch(`https://instagram40.p.rapidapi.com/account-info?username=${input.toLowerCase().trim()}`, api_info)
+        const user_info = yield fetch(`https://the-instagram.p.rapidapi.com/v1/profile/${input.toLowerCase().trim()}`, api_info)
         yield put(getUserSuccess(user_info.json()))
-        const posts = yield fetch(`https://instagram40.p.rapidapi.com/account-feed?username=${input.toLowerCase().trim()}`, api_info)
+        const posts = yield fetch(`https://the-instagram.p.rapidapi.com/v1/profile/${input.toLowerCase().trim()}/media`, api_info)
         yield put(getPostSuccess(posts.json()))
     }
     catch (error) {
