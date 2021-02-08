@@ -14,6 +14,7 @@
     border-radius: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 250px;
 }
 
 .user-name {
@@ -34,6 +35,10 @@
     .user-page {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .user-pfp {
+        width: 150px;
     }
 
     .user-subsection {

@@ -23,6 +23,15 @@ const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 posts: action.payload
             }
+
+        case Types.RESET_STATE:
+            return {
+                user: null,
+                posts: null
+            }
+
+        default:
+            return state
     }
 }
 

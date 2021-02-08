@@ -15,3 +15,7 @@ export const getPostSuccess = (posts) => ({
     type: Types.GET_POSTS_SUCCESS,
     payload: posts
 })
+
+export const resetState = () => ({
+    type: Types.RESET_STATE,
+})

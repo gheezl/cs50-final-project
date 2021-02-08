@@ -1,12 +1,18 @@
 import React, { Fragment } from "react";
 
+import {useSelector} from "react-redux"
+
 import "./user.css";
 
 const User = () => {
+    const user = useSelector(state => state)
+
+    // console.log(user.user)
+
     return(
         <Fragment>
             <div className="user-page">
-                    <img className="user-pfp" src="https://i.redd.it/qtldg7ajo1841.png" width="250px"/>
+                    <img className="user-pfp" src="https://i.redd.it/qtldg7ajo1841.png"/>
                     <h2 className="user-name">okthoidk</h2>
                     <div className="user-subsection">
                         <span className="user-data">followers: 1654</span>

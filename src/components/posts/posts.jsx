@@ -8,7 +8,7 @@ const Posts = () => {
     return(
         <Fragment>
             <div className="posts-page">
-                <h2 className="posts-header">okthoidk posts</h2>
+                <h2 className="posts-header">posts</h2>
                 <Post />
             </div>   
         </Fragment>
