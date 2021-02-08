@@ -10,7 +10,7 @@ const App = () => {
   return(
     <Fragment>
       <Header />
-      {/* <SearchBar /> */}
+      <SearchBar />
       <User />
       <Posts />
     </Fragment>

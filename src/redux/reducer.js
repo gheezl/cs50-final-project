@@ -1,7 +1,8 @@
 import { Types } from "./types.js"
 
 const INITIAL_STATE = {
-    user: null
+    user: null,
+    posts: null
 }
 
 const reducer = (state = INITIAL_STATE, action) => {
@@ -15,6 +16,12 @@ const reducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 user: action.payload
+            }
+
+        case Types.GET_POSTS_SUCCESS:
+            return {
+                ...state,
+                posts: action.payload
             }
     }
 }

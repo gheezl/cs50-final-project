@@ -10,3 +10,8 @@ export const getUserSuccess = (user) => ({
     type: Types.GET_USER_SUCCESS,
     payload: user,
 })
+
+export const getPostSuccess = (posts) => ({
+    type: Types.GET_POSTS_SUCCESS,
+    payload: posts
+})
