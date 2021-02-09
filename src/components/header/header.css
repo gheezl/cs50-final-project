@@ -34,6 +34,7 @@
 @media only screen and (max-width: 800px) {
     .header-name {
         grid-column-start: 1;
+        grid-column-end: 3;
         font-size: 15px;
         margin-left: 10px;
     }
