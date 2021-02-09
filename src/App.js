@@ -3,6 +3,8 @@ import { Fragment } from 'react';
 
 import {useSelector} from "react-redux"
 
+import ErrorBoundary from "./components/error-boundary/error-boundary.jsx"
+
 import Background from "./components/particles/particles.jsx"
 
 import Header from "./components/header/header.jsx"
@@ -16,12 +18,15 @@ const App = () => {
   return(
     <Fragment>
       <Background />
-      <Header />
-      {
-        data
-        ? (<Data />)
-        : (<SearchBar />)
-      }
+      <ErrorBoundary>
+        <Header />
+        {
+          data
+          ? (<Data />)
+          : (<SearchBar />)
+        }
+      </ErrorBoundary>
+      
     </Fragment>
   )
 }

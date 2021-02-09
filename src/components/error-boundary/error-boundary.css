@@ -1,0 +1,23 @@
+.error-display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    border-radius: 25px;
+    background-color:#212731;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .error-display {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
