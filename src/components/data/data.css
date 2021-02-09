@@ -33,29 +33,23 @@
 .data-information {
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
 }
 
 .data {
     margin: 5px;
 }
 
-@media only screen and (max-width: 800px) {
-    .user-page {
+@media only screen and (max-width: 1000px) {
+    .data-page {
         margin-left: 10px;
         margin-right: 10px;
     }
+}
 
-    .user-pfp {
-        width: 150px;
-    }
-
-    .user-subsection {
+@media only screen and (max-width: 1500px) {
+    .data-subsection {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .user-data {
-        margin: 5px;
     }
 }
