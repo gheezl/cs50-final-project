@@ -6,7 +6,7 @@ import {getDataStart} from "../../redux/actions.js"
 import "./search-bar.css";
 
 const SearchBar = () => {
-    const [input, setInput] = useState(null)
+    const [input, setInput] = useState("placeholder")
     const dispatch = useDispatch()
 
     const onChange = (event) => {
