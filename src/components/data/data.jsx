@@ -16,7 +16,7 @@ const Data = () => {
                     <div className="data-subsection">
 
                         <div className="data-information">
-                           <h2 className="data-title">Cases :</h2>
+                           <h2 className="data-title">Cases</h2>
                            <span className="data">active : {data.cases.active.toLocaleString()}</span>
                            <span className="data">critical : {data.cases.critical.toLocaleString()}</span>
                            <span className="data">recovered : {data.cases.recovered.toLocaleString()}</span>
@@ -24,12 +24,12 @@ const Data = () => {
                         </div>
 
                         <div className="data-information">
-                            <h2 className="data-title">Deaths :</h2>
+                            <h2 className="data-title">Deaths</h2>
                             <span className="data">total : {data.deaths.total.toLocaleString()}</span>
                         </div>
 
                         <div className="data-information">
-                            <h2 className="data-title">Tests :</h2>
+                            <h2 className="data-title">Tests</h2>
                             <span className="data">total : {data.tests.total.toLocaleString()}</span>
                         </div>
                         
