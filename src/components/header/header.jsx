@@ -12,7 +12,7 @@ const Header = () => {
         <Fragment>
             <div className="header-border">
                 <h1 className="header-name">COVID-19 Tracker</h1>
-                <h3 onClick={() => dispatch(resetState())} className="search-button">Search?</h3>
+                <h3 onClick={() => dispatch(resetState())} className="search-button">Search</h3>
             </div>
         </Fragment>
     )

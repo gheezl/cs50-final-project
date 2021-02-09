@@ -29,11 +29,10 @@
     margin-right: 100px;
     border: none;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 .input-button:hover {
-    opacity: 90%;
+    opacity: 50%;
 }
 
 @media only screen and (max-width: 800px) {
