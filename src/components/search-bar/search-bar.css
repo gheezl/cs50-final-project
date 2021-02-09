@@ -40,4 +40,8 @@
         margin-left: 25px;
         margin-right: 25px;
     }
+
+    .input-bar {
+        width: 350px;
+    }
 }

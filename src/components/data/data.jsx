@@ -18,7 +18,6 @@ const Data = () => {
                         <div className="data-information">
                            <h2 className="data-title">Cases :</h2>
                            <span className="data">active : {data.cases.active.toLocaleString()}</span>
-                           {/* <span className="data">new today: {data.cases.new}</span> */}
                            <span className="data">critical : {data.cases.critical.toLocaleString()}</span>
                            <span className="data">recovered : {data.cases.recovered.toLocaleString()}</span>
                            <span className="data">total : {data.cases.total.toLocaleString()}</span>
@@ -26,7 +25,6 @@ const Data = () => {
 
                         <div className="data-information">
                             <h2 className="data-title">Deaths :</h2>
-                            {/* <span className="data">new today: {data.deaths.new}</span> */}
                             <span className="data">total : {data.deaths.total.toLocaleString()}</span>
                         </div>
 
