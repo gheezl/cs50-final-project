@@ -1,6 +1,6 @@
 .header-border {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     z-index: +1;
     top: 0;
@@ -14,12 +14,13 @@
 .header-name {
     display: flex;
     justify-content: center;
-    grid-column-start: 2;
+    grid-column-start: 3;
     font-size: 25px;
     padding: 10px;
 }
 
 .search-button {
+    grid-column-start: 5;
     display: flex;
     justify-content: right;
     margin-right: 50px;
@@ -38,7 +39,7 @@
     }
 
     .search-button {
-        grid-column-start: 3;
+        grid-column-start: 5;
         margin-right: 15px;
         font-size: 15px;
     }
