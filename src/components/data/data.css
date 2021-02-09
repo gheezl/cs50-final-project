@@ -1,4 +1,4 @@
-.user-page {
+.data-page {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,18 +17,26 @@
     width: 250px;
 }
 
-.user-name {
+.country-name {
     background-color: #212731;
+    margin-top: 50px;
 }
 
-.user-subsection {
+.data-subsection {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #212731;
     padding: 10px;
 }
 
-.user-data {
-    background-color: #212731;
-    margin: 10px;
+.data-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    margin: 5px;
 }
 
 @media only screen and (max-width: 800px) {

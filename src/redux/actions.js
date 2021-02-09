@@ -1,19 +1,14 @@
 import { Types } from "./types.js"
 
 
-export const getUserStart = (username) => ({
-    type: Types.GET_USER_START,
-    payload: username,
+export const getDataStart = (nationName) => ({
+    type: Types.GET_DATA_START,
+    payload: nationName,
 })
 
-export const getUserSuccess = (user) => ({
-    type: Types.GET_USER_SUCCESS,
-    payload: user,
-})
-
-export const getPostSuccess = (posts) => ({
-    type: Types.GET_POSTS_SUCCESS,
-    payload: posts
+export const getDataSuccess = (data) => ({
+    type: Types.GET_DATA_SUCCESS,
+    payload: data,
 })
 
 export const resetState = () => ({

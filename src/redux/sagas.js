@@ -2,19 +2,17 @@ import {takeLatest, put, all, call} from "redux-saga/effects"
 
 import { Types } from "./types.js"
 
-import {getPostSuccess, getUserSuccess} from "./actions.js"
+import {getDataSuccess} from "./actions.js"
 
 import {api_info} from "../api/api.js"
 
 // saga functions
 
-export function* getUser({payload : input}) {
+export function* getData({payload : input}) {
     try {
-        const user_info = yield fetch(`https://the-instagram.p.rapidapi.com/v1/profile/${input.toLowerCase().trim()}`, api_info)
-        yield put(getUserSuccess(user_info.json()))
-        const posts = yield fetch(`https://the-instagram.p.rapidapi.com/v1/profile/${input.toLowerCase().trim()}/media`, api_info)
-        yield put(getPostSuccess(posts.json()))
-        yield localStorage.setItem("current-user", [user_info, posts]) 
+        const nationInfo = yield (yield fetch(`https://covid-193.p.rapidapi.com/statistics?country=${input.toLowerCase().trim()}`, api_info)).json()
+        yield put(getDataSuccess(nationInfo.response[0]))
+        yield localStorage.setItem("current-nation", nationInfo)
         
     }
     catch (error) {
@@ -24,15 +22,15 @@ export function* getUser({payload : input}) {
 
 // listeners
 
-export function* onGetUserStart() {
-    yield takeLatest(Types.GET_USER_START, getUser)
+export function* onGetDataStart() {
+    yield takeLatest(Types.GET_DATA_START, getData)
 }
 
 // Final Saga
 
 function* saga() {
     yield all([
-        call(onGetUserStart),
+        call(onGetDataStart),
     ])
 }
 

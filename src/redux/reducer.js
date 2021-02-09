@@ -1,34 +1,26 @@
 import { Types } from "./types.js"
 
 const INITIAL_STATE = {
-    user: null,
-    posts: null
+    data: null,
 }
 
 const reducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case Types.GET_USER_START:
+        case Types.GET_DATA_START:
             return {
                 ...state
             }
 
-        case Types.GET_USER_SUCCESS:
+        case Types.GET_DATA_SUCCESS:
             return {
                 ...state,
-                user: action.payload
-            }
-
-        case Types.GET_POSTS_SUCCESS:
-            return {
-                ...state,
-                posts: action.payload
+                data: action.payload
             }
 
         case Types.RESET_STATE:
             localStorage.setItem("current-user", null)
             return {
-                user: null,
-                posts: null
+                data: null
             }
 
         default:
