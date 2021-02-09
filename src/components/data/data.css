@@ -51,5 +51,10 @@
     .data-subsection {
         display: flex;
         flex-direction: column;
+        gap: 25px;
+    }
+
+    .data-information {
+        /* margin-left: 0px; */
     }
 }
