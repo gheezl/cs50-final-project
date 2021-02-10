@@ -10,7 +10,6 @@ const Data = () => {
     return(
         <Fragment>
             <div className="data-page">
-                    {/* <img className="user-pfp" src="https://i.redd.it/qtldg7ajo1841.png"/> */}
                     <h2 className="country-name">{data.country}</h2>
                     <h3>{data.day}</h3>
                     <div className="data-subsection">
